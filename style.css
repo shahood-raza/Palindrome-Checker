@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #0a84ff;
+    background: linear-gradient(135deg, #0a84ff, #00c8ff, #62d1c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    padding: 40px;
+    gap: 25px;
+    font-weight: 300;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.heading h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.input input {
+    height: 40px;
+    width: 16vw;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.input input:focus {
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 136, 204, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.input button {
+    height: 40px;
+    width: 6vw;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease-in-out;
+}
+
+.input button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 16px rgba(0, 136, 204, 0.3);
+    transform: scale(1.05);
+}
+
+#show-result {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*for Tablets/Ipads*/
+@media (max-width: 900px) {
+    .container {
+        width: 60vw;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .input input {
+        width: 50vw;
+    }
+
+    .input button {
+        width: 15vw;
+    }
+}
+
+/* for Mobile Phones */
+@media (max-width: 600px) {
+    .container {
+        width: 80vw;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input input {
+        width: 75vw;
+    }
+
+    .input button {
+        width: 50vw;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
